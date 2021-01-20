@@ -1,0 +1,21 @@
+.SocialNav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 2rem;
+  a {
+    margin-right: 0.25rem;
+    svg {
+      display: inline-block;
+      margin: auto;
+      height: 1rem;
+      vertical-align: -0.125em;
+      color: black;
+    }
+  }
+  a:hover {
+    svg {
+      color: #7950F7;
+    }
+  }
+}

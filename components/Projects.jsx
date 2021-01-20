@@ -9,7 +9,7 @@ export default function Projects() {
     <div className={styles.Projects}>
       <Container>
         <div className={styles.GridContainer}>
-          <Project
+          {/* <Project
             name="The Cheetah Press"
             description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, mollitia molestiae!"
             link="https://thecheetahpress.vercel.app"
@@ -17,9 +17,9 @@ export default function Projects() {
             <svg viewBox="0 0 24 24">
               <path d="M13,2l9,13.6L13,22ZM11,2,2,15.6,11,22Z" fill="currentColor" />
             </svg>
-          </Project>
+          </Project> */}
 
-          <Project
+          {/* <Project
             name="Spring Lakes Golf Club"
             description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, mollitia molestiae!"
             link="https://springlakesgolf.com"
@@ -28,11 +28,11 @@ export default function Projects() {
               <path class="a" d="M590.26 745.8L473.92 259.47l84.75-134.51-104.8 48.01 50.34-73.46L295.3 0l88.55 139.43-37.57-18.35-199.55 96.47 8.9 37.54 202.02 94.43-69.47-11.82-94.48 408.1h65.57l76.41-123.28h98.01l78.99 123.28h77.58z" fill="currentColor" />
               <path class="a" d="M0 744.23l61.22-262.62 194.03-93.1-55.43 235.58-71.09 2.15L52.3 744.23H0zM259.55 144.99l-56.03-89.3 126.87 57.81-70.84 31.49z" fill="currentColor" />
             </svg>
-          </Project>
+          </Project> */}
 
           <Project
             name="Larry Fitzgerald Jr"
-            description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, mollitia molestiae!"
+            description="NFL Wide Receiver, Arizona Cardinals"
             link="https://larryfitzgerald.com"
           >
             <svg viewBox="0 0 31.98 51.34">
@@ -42,7 +42,7 @@ export default function Projects() {
 
           <Project
             name="deepsix"
-            description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, mollitia molestiae!"
+            description="New Rock Band, Toronto, Canada"
             link="https://deepsixband.com"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
