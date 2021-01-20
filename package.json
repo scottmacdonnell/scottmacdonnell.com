@@ -1,0 +1,22 @@
+{
+  "name": "scottmacdonnell.com",
+  "productName": "scottmacdonnell.com",
+  "version": "0.1.0",
+  "description": "My personal website",
+  "repository": "https://github.com/scottmacdonnell/scottmacdonnell.com.git",
+  "author": "Scott MacDonnell <scottsmacdonnell@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "sass": "^1.32.4"
+  },
+  "devDependencies": {}
+}
