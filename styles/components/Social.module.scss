@@ -1,0 +1,26 @@
+@import '../colors';
+@import '../mixins';
+
+.Social {
+  height: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $secondaryText;
+    text-decoration: none;
+    margin: 0 0 0 0.5em;
+    transition: all 0.1s ease;
+    svg {
+      height: 18px;
+    }
+  }
+  a:active,
+  a:hover {
+    color: #845ef7;
+  }
+}

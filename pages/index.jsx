@@ -1,29 +1,24 @@
 import Page from '../components/Page'
 import Container from '../components/Container'
-import SocialNav from '../components/SocialNav'
-import Projects from '../components/Projects'
-import NowPlaying from '../components/NowPlaying'
+import GlitchText from '../components/GlitchText'
 
 export default function Index() {
   return (
-    <Page 
+    <Page
       className="Index"
     >
-      <header>
+      <header id="header">
+
       </header>
 
-      <main>
+      <main id="main">
         <Container>
-          <h1>Hi, my name is Scott MacDonnell</h1>
-          <p>I am a Full Stack Developer based in Toronto, Canada, specializing in building digital products that resonate.</p>
-          <SocialNav />
+          <GlitchText>Under Maintenance</GlitchText>
         </Container>
-
-        <Projects />
-        <NowPlaying />
       </main>
 
-      <footer>
+      <footer id="footer">
+        
       </footer>
     </Page>
   )

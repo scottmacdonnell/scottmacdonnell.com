@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 
 export default function Page({
   children,
@@ -10,31 +11,66 @@ export default function Page({
 }) {
   const siteName = 'Scott MacDonnell'
   const siteURL = 'https://scottmacdonnell.com'
-  const siteDescription = 'I am a Full Stack Developer based in Toronto, Canada, specializing in building digital products that resonate.'
+  const siteDescription = 'I am a Full Stack Developer and Sound Engineer based in Toronto, Canada, building digital products that resonate.'
+  const siteImage = `${siteURL}/images/og.jpg`
 
-  const formattedPageName = (pageName) ? `${pageName} - ${siteName}` : siteName
-  const formattedURL = (slug) ? `${siteURL}/${slug}` : siteURL
-  const formattedDescription = (description) ? description : siteDescription
+  const formattedPageName = pageName ? `${pageName} - ${siteName}` : siteName
+  const formattedURL = slug ? `${siteURL}/${slug}` : siteURL
+  const formattedDescription = description ? description : siteDescription
+  const formattedImage = imageURL ? imageURL : siteImage
 
   return (
     <div className={className}>
       <Head>
-        {/* Main */}
         <title>{formattedPageName}</title>
-        <meta name="description" content={formattedDescription} key="description" />
+        <meta
+          name="description"
+          content={formattedDescription}
+          key="description"
+        />
 
-        {/* Open Graph */}
-        <meta name="og:title" property="og:title" content={formattedPageName} key="ogtitle" />
-        <meta name="og:url" property="og:url" content={formattedURL} key="ogurl" />
-        <meta name="og:image" property="og:image" content={imageURL} key="ogimage" />
-        <meta name="og:description" property="og:description" content={formattedDescription} key="ogdescription" />
-        
-        {/* Twitter Cards */}
+        <meta
+          name="og:site_name"
+          property="og:site_name"
+          content={siteName}
+          key="ogsitename"
+        />
+        <meta
+          name="og:title"
+          property="og:title"
+          content={formattedPageName}
+          key="ogtitle"
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content={formattedURL}
+          key="ogurl"
+        />
+        <meta
+          name="og:image"
+          property="og:image"
+          content={formattedImage}
+          key="ogimage"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content={formattedDescription}
+          key="ogdescription"
+        />
+
         <meta name="twitter:title" content={formattedPageName} key="twtitle" />
-        <meta name="twitter:description" content={formattedDescription} key="twdescription" />
-        <meta name="twitter:image" content={imageURL} key="twimage" />
+        <meta
+          name="twitter:description"
+          content={formattedDescription}
+          key="twdescription"
+        />
+        <meta name="twitter:image" content={formattedImage} key="twimage" />
       </Head>
-      {children}
+      <motion.div initial="exit" animate="enter" exit="exit">
+        {children}
+      </motion.div>
     </div>
   )
 }

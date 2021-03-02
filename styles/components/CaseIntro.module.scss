@@ -1,0 +1,80 @@
+@import '../breakpoints';
+@import '../colors';
+@import '../mixins';
+
+.CaseIntro {
+//   border-bottom: 1px solid $accent2;
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $secondaryText;
+    strong {
+      font-weight: 500;
+      color: $accent9;
+    }
+  }
+  @media screen and (min-width: $breakpointMedium) {
+    margin: 2rem 0 1rem 0;
+    p {
+      text-align: center;
+    }
+    .CaseIntroTitle {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+      h1 {
+        grid-area: 1 / 3 / 1 / 7;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5rem;
+        @media screen and (max-width: $breakpointLarge) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $breakpointMedium) {
+    margin: 1rem 0 0 0;
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.CaseIntroMetaMobile {
+  @media screen and (min-width: $breakpointMedium) {
+    display: none;
+  }
+  @media screen and (max-width: $breakpointMedium) {
+  }
+}
+
+.CaseIntroMetaDesktop {
+  @media screen and (min-width: $breakpointMedium) {
+    @include Grid;
+    .CaseIntroType {
+      grid-area: span 1 / span 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .CaseIntroDescription {
+      grid-area: span 1 / span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .CaseIntroYear {
+      grid-area: span 1 / span 2;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: $breakpointMedium) {
+    display: none;
+  }
+}
