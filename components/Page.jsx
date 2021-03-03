@@ -33,40 +33,40 @@ export default function Page({
           name="og:site_name"
           property="og:site_name"
           content={siteName}
-          key="ogsitename"
+          key="og:sitename"
         />
         <meta
           name="og:title"
           property="og:title"
           content={formattedPageName}
-          key="ogtitle"
+          key="og:title"
         />
         <meta
           name="og:url"
           property="og:url"
           content={formattedURL}
-          key="ogurl"
+          key="og:url"
         />
         <meta
           name="og:image"
           property="og:image"
           content={formattedImage}
-          key="ogimage"
+          key="og:image"
         />
         <meta
           name="og:description"
           property="og:description"
           content={formattedDescription}
-          key="ogdescription"
+          key="og:description"
         />
 
-        <meta name="twitter:title" content={formattedPageName} key="twtitle" />
+        <meta name="twitter:title" content={formattedPageName} key="twitter:title" />
         <meta
           name="twitter:description"
           content={formattedDescription}
-          key="twdescription"
+          key="twitter:description"
         />
-        <meta name="twitter:image" content={formattedImage} key="twimage" />
+        <meta name="twitter:image" content={formattedImage} key="twitter:image" />
       </Head>
       <motion.div initial="exit" animate="enter" exit="exit">
         {children}

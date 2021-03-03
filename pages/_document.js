@@ -5,9 +5,9 @@ class MainDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="og:type" property="og:type" content="website" key="ogtype" />
-          <meta property="og:locale" content="en_US" key="oglocale" />
-          <meta name="og:site_name" property="og:site_name" content="Spring Lakes Golf Club" key="ogsitename" />
+          <meta name="og:type" property="og:type" content="website" key="og:type" />
+          <meta property="og:locale" content="en_US" key="og:locale" />
+          <meta name="og:site_name" property="og:site_name" content="Scott MacDonnell" key="og:sitename" />
           
           <meta name="twitter:card" content="summary_large_image" key="twcard" />
 
