@@ -11,8 +11,8 @@ export default function Page({
 }) {
   const siteName = 'Scott MacDonnell'
   const siteURL = 'https://scottmacdonnell.com'
-  const siteDescription = 'I am a Full Stack Developer and Sound Engineer based in Toronto, Canada, building digital products that resonate.'
-  const siteImage = `${siteURL}/images/og.jpg`
+  const siteDescription = 'A Full Stack Developer and Sound Engineer based in Toronto, Canada.'
+  const siteImage = `${siteURL}/og.jpg`
 
   const formattedPageName = pageName ? `${pageName} - ${siteName}` : siteName
   const formattedURL = slug ? `${siteURL}/${slug}` : siteURL
