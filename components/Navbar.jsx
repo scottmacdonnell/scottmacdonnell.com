@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className={`${styles.Nav} ${navShown ? styles.NavActive : ''}`}>
           <div className={styles.NavLogo}>
             <Link href="/">
-              <a name="Homepage" alt="Homepage"><Logo /></a>
+              <a aria-label="Homepage"><Logo /></a>
             </Link>
           </div>
 
