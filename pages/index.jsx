@@ -5,9 +5,7 @@ import Construction from '../components/Construction'
 
 export default function Index() {
   return (
-    <Page
-      className="Index"
-    >
+    <Page>
       <header id="header">
         <Container>
           <Navbar />

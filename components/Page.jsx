@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 
 export default function Page({
   children,
-  className,
   pageName,
   slug,
   description,
@@ -20,7 +19,7 @@ export default function Page({
   const formattedImage = imageURL ? imageURL : siteImage
 
   return (
-    <div className={className}>
+    <>
       <Head>
         <title>{formattedPageName}</title>
         <meta
@@ -71,6 +70,6 @@ export default function Page({
       <motion.div initial="exit" animate="enter" exit="exit">
         {children}
       </motion.div>
-    </div>
+    </>
   )
 }
