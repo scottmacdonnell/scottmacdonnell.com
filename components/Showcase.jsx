@@ -9,14 +9,34 @@ const transition = {
   ease: [0.43, 0.13, 0.23, 0.96],
 }
 
-const pageVariants = {
+const imageVariants = {
   exit: { x: 50, opacity: 0, transition },
   enter: { x: 0, opacity: 1, transition: { delay: 0.25, ...transition } },
 }
 
+const textVariants1 = {
+  exit: { opacity: 0, transition },
+  enter: { opacity: 1, transition: { delay: 0.30, ...transition } },
+}
+
+const textVariants2 = {
+  exit: { opacity: 0, transition },
+  enter: { x: 0, opacity: 1, transition: { delay: 0.35, ...transition } },
+}
+
+const textVariants3 = {
+  exit: { opacity: 0, transition },
+  enter: { opacity: 1, transition: { delay: 0.40, ...transition } },
+}
+
+const textVariants4 = {
+  exit: { opacity: 0, transition },
+  enter: { opacity: 1, transition: { delay: 0.45, ...transition } },
+}
+
 export default function Showcase() {
   return (
-    <motion.div className={styles.Showcase} variants={pageVariants}>
+    <div className={styles.Showcase}>
       <Project
         title="Spring Lakes Golf Club"
         type="Full-Stack React Development"
@@ -34,7 +54,7 @@ export default function Showcase() {
         type="Full-Stack React Development"
         image="/placeholder.jpg"
       />
-    </motion.div>
+    </div>
   )
 }
 
@@ -45,17 +65,33 @@ function Project({
 }) {
   return (
     <div className={styles.Project}>
-      <div className={styles.ProjectInfo}>
-        <h2>{title}</h2>
-        <p>{type}</p>
-      </div>
+      <Link href="/case">
+        <div className={styles.ProjectInfo}>
+          <motion.div variants={textVariants1}>
+            <span><p>Project</p></span>
+          </motion.div>
 
-      <div className={styles.ProjectImage}>
+          <motion.div variants={textVariants2}>
+            <h2>{title}</h2>
+          </motion.div>
+
+          <motion.div variants={textVariants3}>
+            <p>{type}</p>
+          </motion.div>
+          
+          <motion.div variants={textVariants4}>
+            <a>Explore →</a>
+          </motion.div>
+          
+        </div>
+      </Link>
+
+      <motion.div className={styles.ProjectImage} variants={imageVariants}>
         <Image
           src={image}
           layout="fill"
         />
-      </div>
+      </motion.div>
     </div>
   )
 }

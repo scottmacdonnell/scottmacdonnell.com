@@ -3,7 +3,7 @@
 @import '../mixins';
 
 .CaseIntro {
-  padding: 1rem 0;
+  padding: 10rem 0;
 //   border-bottom: 1px solid $accent2;
   p {
     font-size: 1rem;
@@ -15,7 +15,7 @@
     }
   }
   @media screen and (min-width: $breakpointMedium) {
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0 2rem 0;
     p {
       text-align: center;
     }

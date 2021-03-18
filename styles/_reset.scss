@@ -48,6 +48,12 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+/* Remove default anchor tag styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img {
   max-width: 100%;

@@ -1,152 +1,176 @@
+@import '../colors';
 @import '../breakpoints';
 
-$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
-
 .Navbar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 1rem;
-  @media screen and (min-width: $breakpointMedium) {
-    padding: calc(2rem - 10.7px) 0;
-  }
-  @media screen and (max-width: $breakpointMedium) {
-    padding: calc(2rem - 8px) 0;
-  }
-}
-
-.NavbarLogo {
-  grid-area: span 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  a {
-    display: contents;
-    svg {
-      color: #000000;
-      opacity: 100%;
-      width: 4rem;
-      transition: opacity 0.1s ease;
-      @media only screen and (max-width: $breakpointMedium) {
-        width: 3rem;
-      }
-    }
-  }
-  a:hover,
-  a:active {
-    svg {
-      opacity: 50%;
-    }
-  }
-}
-
-.NavbarToggleContainer {
-  grid-area: span 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.NavbarToggle {
-  display: block;
+  padding: 1rem 0;
   z-index: 999;
-  height: 20px;
-  width: 20px;
-  margin: 0;
-  .ToggleIconContainer {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    transform: rotate(0deg);
-    transition: all 0.3s;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    .ToggleIcon {
-      width: 20px;
-      height: 10px;
-      position: relative;
-      display: block;
-      margin: 3px auto;
-      top: 50%;
-      .TopBar {
-        background: #000000;
-        width: 100%;
-        height: 1px;
-        display: block;
-        position: relative;
-        transition: all 0.3s $cubic;
-        transition-delay: 0s;
-        transform: translateY(0px) rotate(0deg);
-      }
-      .BtmBar {
-        background: #000000;
-        width: 100%;
-        height: 1px;
-        display: block;
-        position: relative;
-        transition: all 0.3s $cubic;
-        transition-delay: 0s;
-        transform: translateY(8px) rotate(0deg);
-      }
-    }
-  }
-}
-
-.NavbarContent {
   display: block;
-  width: 100%;
-  height: 0vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  opacity: 0%;
-  z-index: 2;
-  transition-delay: 0.2s;
-  transition: opacity 0.25s ease;
-  .NavbarMainContainer {
-    background: #ffffff;
-    color: #000000;
-    opacity: 0%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  color: $accent0;
+}
+
+.NavbarContainer {
+  padding: 0;
+  max-width: $breakpointDesktop;
+  margin: 0 auto;
+  float: none;
+  @media only screen and (max-width: $breakpointMax) {
+    margin: 0 1rem;
   }
 }
 
-.NavbarActive {
-  .NavbarToggle {
-    .ToggleIconContainer {
-      transform: rotate(90deg);
-      .ToggleIcon {
+.Nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  .NavLogo {
+    cursor: pointer;
+    grid-area: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    svg {
+      color: inherit;
+      height: 4rem;
+    }
+  }
+  .NavMain {
+    grid-area: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .NavToggle {
+    display: block;
+    z-index: 999;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    .IconContainer {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      transform: rotate(0deg);
+      transition: all 0.3s;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      .Icon {
+        width: 20px;
+        height: 10px;
+        position: relative;
+        display: block;
+        margin: 3px auto;
+        top: 50%;
         .TopBar {
-          transition: all 0.4s $cubic;
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: relative;
+          background: #ffffff;
+          transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0s;
+          transform: translateY(0px) rotate(0deg);
+        }
+        .BtmBar {
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: relative;
+          background: #ffffff;
+          transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          transition-delay: 0s;
+          transform: translateY(8px) rotate(0deg);
+        }
+      }
+    }
+  }
+  .NavContent {
+    display: hidden;
+    position: relative;
+    width: 100%;
+    height: 0vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    z-index: 888;
+    transition-delay: 0.2s;
+    transition: opacity 0.25s ease;
+    .NavContainer {
+      display: hidden;
+      opacity: 0%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111111;
+      color: #fafafa;
+      .NavWrapper {
+        display: hidden;
+        max-width: $breakpointDesktop;
+        margin: 0 1rem;
+        padding: 1rem 0;
+        float: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  nav {
+    display: none;
+  }
+}
+
+.NavActive {
+  .NavToggle {
+    position: fixed;
+    .IconContainer {
+      transform: rotate(90deg);
+      .Icon {
+        .TopBar {
+          transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           transition-delay: 0.2s;
           transform: translateY(6px) rotate(45deg);
         }
         .BtmBar {
-          transition: all 0.4s $cubic;
+          transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           transition-delay: 0.2s;
           transform: translateY(5px) rotate(-45deg);
         }
       }
     }
   }
-  .NavbarContent {
+  .NavContent {
     display: block;
     height: 100vh;
     opacity: 100%;
     transition-delay: 0.2s;
     transition: opacity 0.25s ease;
-    .NavbarMainContainer {
+    .NavContainer {
       opacity: 100%;
     }
   }
+  nav {
+    display: flex;
+  }
 }
 
-.NavbarMain {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.MainNav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 2rem;
+      padding-top: 1rem;
+    }
 }

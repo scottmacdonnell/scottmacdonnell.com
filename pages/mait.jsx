@@ -1,7 +1,6 @@
 import Page from '../components/Page'
 import Container from '../components/Container'
-import Navbar from '../components/Navbar'
-import Construction from '../components/Construction'
+import GlitchText from '../components/GlitchText'
 
 export default function Index() {
   return (
@@ -9,21 +8,17 @@ export default function Index() {
       className="Index"
     >
       <header id="header">
-        <Container>
-          <Navbar />
-        </Container>
+
       </header>
 
       <main id="main">
         <Container>
-          <Construction />
+          <GlitchText>Under Maintenance</GlitchText>
         </Container>
       </main>
 
       <footer id="footer">
-        {/* <Container>
-          <Footer />
-        </Container> */}
+        
       </footer>
     </Page>
   )

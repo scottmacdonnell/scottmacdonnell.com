@@ -38,12 +38,10 @@ export default function NotFound() {
       <main id="main">
         <Container>
           <motion.div className="back" variants={backVariants}>
-            <Link href="/">
-              <GlitchText>Not Found</GlitchText>
-            </Link>
+            <GlitchText>Not Found</GlitchText>
           </motion.div>
           <motion.div className="back" variants={backVariants}>
-            <Link href="/">
+            <Link href="/home">
               <a>← Back</a>
             </Link>
           </motion.div>
