@@ -1,14 +1,13 @@
 @import './reset';
-@import './typography';
 
 html,
 body {
+  padding: 0;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-  background-color: #111111;
-  color: #ffffff;
 }
 
 body {
@@ -23,3 +22,6 @@ html {
 *::-webkit-scrollbar {
   display: none;
 }
+
+*::-moz-selection { color: white; background: #141618; text-shadow: none; }
+*::selection { color: white; background: #141618; text-shadow: none; }

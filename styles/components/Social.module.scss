@@ -1,11 +1,8 @@
-@import '../colors';
-@import '../mixins';
-
 .Social {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 4px 0;
+  padding: 0;
   a {
     display: flex;
     justify-content: flex-start;
@@ -13,8 +10,26 @@
     text-decoration: none;
     margin: 0 0.5em 0 0;
     transition: all 0.1s ease;
+    color: #58585f;
     svg {
-      height: 18px;
+      margin: 0 0.25rem;
+      width: 18px;
     }
+  }
+  .LinkedIn:active,
+  .LinkedIn:hover {
+    color: #0072B1;
+  }
+  .GitHub:active,
+  .GitHub:hover {
+    color: #24292D;
+  }
+  .Twitter:active,
+  .Twitter:hover {
+    color: #08A0E9;
+  }
+  .Instagram:active,
+  .Instagram:hover {
+    color: #DD2A7B;
   }
 }

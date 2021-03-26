@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className={`${styles.Nav} ${navShown ? styles.NavActive : ''}`}>
           <div className={styles.NavLogo}>
             <Link href="/">
-              <a aria-label="Homepage"><Logo /></a>
+              <a aria-label="Homepage"><span><Logo /></span></a>
             </Link>
           </div>
 
@@ -57,5 +57,18 @@ function Logo() {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
       <path d="M13,2l9,13.6L13,22ZM11,2,2,15.6,11,22Z" />
     </svg>
+  )
+}
+
+function Toggle() {
+  return (
+    <div className={styles.Toggle}>
+      <div className={styles.ToggleContainer}>
+        <div className={styles.ToggleIcon}>
+          <div className={styles.ToggleTopBar} />
+          <div className={styles.ToggleBtmBar} />
+        </div>
+      </div>
+    </div>
   )
 }
