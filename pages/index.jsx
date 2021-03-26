@@ -2,12 +2,14 @@ import Page from '../components/Page'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
-
 import Footer from '../components/Footer'
 
 export default function Index() {
   return (
-    <Page>
+    <Page
+      className="Index"
+      slug="/"
+    >
       <header id="header">
         <Navbar />
       </header>
