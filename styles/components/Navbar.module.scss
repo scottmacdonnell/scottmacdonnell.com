@@ -9,7 +9,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  color: $accent0;
 }
 
 .NavbarContainer {
@@ -28,11 +27,18 @@
   grid-template-rows: 1fr;
   gap: 1rem;
   .NavLogo {
+    height: 4rem;
     cursor: pointer;
     grid-area: span 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    span {
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: -0.5px;
+      font-weight: 600;
+    }
     svg {
       color: inherit;
       height: 4rem;
@@ -70,7 +76,7 @@
           height: 1px;
           display: block;
           position: relative;
-          background: #ffffff;
+          background: currentColor;
           transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           transition-delay: 0s;
           transform: translateY(0px) rotate(0deg);
@@ -80,7 +86,7 @@
           height: 1px;
           display: block;
           position: relative;
-          background: #ffffff;
+          background: currentColor;
           transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           transition-delay: 0s;
           transform: translateY(8px) rotate(0deg);
@@ -108,8 +114,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #111111;
-      color: #fafafa;
+      background: white;
+      color: black;
       .NavWrapper {
         display: hidden;
         max-width: $breakpointDesktop;
@@ -150,10 +156,20 @@
   }
   .NavContent {
     display: block;
-    height: 100vh;
     opacity: 100%;
     transition-delay: 0.2s;
     transition: opacity 0.25s ease;
+
+
+    //Only Chrome 29+
+    @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+      height: 100vh;
+      min-height: $breakpointMedium;
+    }
+
+    // Safari
+      height: 100vh;
+      max-height: -webkit-fill-available;
     .NavContainer {
       opacity: 100%;
     }

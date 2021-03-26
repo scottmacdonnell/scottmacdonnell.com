@@ -1,0 +1,124 @@
+@import '../breakpoints';
+
+@mixin Heading1 {
+  margin: 0;
+  text-transform: none;
+  max-width: 38ch;
+  font-size: 3rem;
+  line-height: 1.1em;
+  font-weight: 700;
+  letter-spacing: -.049375rem;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  @media screen and (max-width: $breakpointMedium) {
+    font-size: 2rem;
+  }
+}
+
+@mixin Heading5 {
+  font-weight: 400;
+  text-transform: none;
+  max-width: 38ch;
+  font-size: 1.25rem;
+  line-height: 1.41em;
+  letter-spacing: -.01125rem;
+  margin: 1.5rem 0;
+  display: block;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  @media screen and (max-width: $breakpointMedium) {
+    font-size: 1rem;
+  }
+}
+
+@mixin HeadingB {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: .9rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.Hero {
+  width: 100%;
+  display: table;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: padding-box;
+  -moz-box-sizing: padding-box;
+  box-sizing: border-box;
+
+  h1 {
+    @include Heading1;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  h5 {
+    @include Heading5;
+    text-align: center;
+  }
+
+  span {
+    @include HeadingB;
+    color: #0070f3;
+  }
+
+  //Only Chrome 29+
+  @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  // Safari
+  @media screen and (min-width: $breakpointMedium) {
+    height: 100vh;
+    max-height: -webkit-fill-available;
+  }
+  @media screen and (max-width: $breakpointMedium) {
+    height: 100vh;
+    max-height: -webkit-fill-available;
+  }
+}
+
+.HeroContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Desktop {
+  @media screen and (min-width: $breakpointMedium) {
+    display: block;
+  }
+  @media screen and (max-width: $breakpointMedium) {
+    display: none;
+  }
+}
+
+.Mobile {
+  @media screen and (min-width: $breakpointMedium) {
+    display: none;
+  }
+  @media screen and (max-width: $breakpointMedium) {
+    display: block;
+  }
+}

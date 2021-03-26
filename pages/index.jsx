@@ -1,27 +1,25 @@
 import Page from '../components/Page'
-import Container from '../components/Container'
 import Navbar from '../components/Navbar'
-import Construction from '../components/Construction'
+import Hero from '../components/Hero'
+import Projects from '../components/Projects'
+
+import Footer from '../components/Footer'
 
 export default function Index() {
   return (
     <Page>
       <header id="header">
-        <Container>
-          <Navbar />
-        </Container>
+        <Navbar />
       </header>
 
       <main id="main">
-        <Container>
-          <Construction />
-        </Container>
+        <Hero />
+
+        <Projects />
       </main>
 
       <footer id="footer">
-        {/* <Container>
-          <Footer />
-        </Container> */}
+        <Footer />
       </footer>
     </Page>
   )
