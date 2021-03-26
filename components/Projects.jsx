@@ -19,17 +19,20 @@ export default function Projects({
           <ProjectCard
             name="Spring Lakes Golf Club"
             type="Full-Stack React Development"
-            image="/og.jpg"
-          />
-          <ProjectCard
-            name="deepsix"
-            type="Full-Stack React Development"
-            image="/og.jpg"
+            image="/sl.jpg"
+            link="https://springlakesgolf.com"
           />
           <ProjectCard
             name="Larry Fitzgerald Jr."
             type="WordPress Development"
-            image="/og.jpg"
+            image="/lf.jpg"
+            link="https://larryfitzgerald.com"
+          />
+          <ProjectCard
+            name="deepsix"
+            type="Full-Stack React Development"
+            image="/ds.jpg"
+            link="https://deepsixband.com"
           />
         </div>
       </Container>
@@ -40,25 +43,30 @@ export default function Projects({
 function ProjectCard({
   name,
   type,
-  image
+  image,
+  link
 }) {
   return (
-    <div className={styles.ProjectCard}>
-      <div className={styles.ProjectCardImage}>
-        <Image 
-          src={image}
-          alt={image}
-          width={360}
-          height={360}
-          quality={100}
-          layout="responsive"
-          objectFit="cover"
-        />
-      </div>
-      <div className={styles.ProjectCardContent}>
-        <h5>{name}</h5>
-        <span><p>{type}</p></span>
-      </div>
-    </div>
+    <Link href={link}>
+      <a target="_blank" rel="noopener noreferrer">
+        <div className={styles.ProjectCard}>
+          <div className={styles.ProjectCardImage}>
+            <Image 
+              src={image}
+              alt={image}
+              width={360}
+              height={360}
+              quality={100}
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+          <div className={styles.ProjectCardContent}>
+            <h5>{name}</h5>
+            <span><p>{type}</p></span>
+          </div>
+        </div>
+      </a>
+    </Link>
   )
 }
