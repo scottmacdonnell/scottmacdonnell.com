@@ -17,7 +17,7 @@ export default function Hero() {
         </Container>
 
         <Container>
-          <h1 className={styles.PrimaryHeading}>I believe simplicity will stand out, while complexity will get lost in the crowd.</h1>
+          <h1 className={styles.PrimaryHeading}>I believe the simplicity will stand out, while complexity will get lost in the crowd.</h1>
         </Container>
 
         <Container>
