@@ -23,16 +23,16 @@ export default function Projects({
             link="https://springlakesgolf.com"
           />
           <ProjectCard
-            name="Larry Fitzgerald Jr."
-            type="WordPress Development"
-            image="/lf.jpg"
-            link="https://larryfitzgerald.com"
-          />
-          <ProjectCard
             name="deepsix"
             type="Full-Stack React Development"
             image="/ds.jpg"
             link="https://deepsixband.com"
+          />
+          <ProjectCard
+            name="Larry Fitzgerald Jr."
+            type="WordPress Development"
+            image="/lf.jpg"
+            link="https://larryfitzgerald.com"
           />
         </div>
       </Container>

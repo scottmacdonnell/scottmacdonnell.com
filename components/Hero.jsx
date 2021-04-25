@@ -6,13 +6,13 @@ import Social from './Social'
 import styles from '../styles/components/Hero.module.scss'
 
 const transition = {
-  duration: 1.25,
+  duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
 }
 
 const pageVariants = {
   exit: { opacity: 0, transition },
-  enter: { opacity: 1, transition: { delay: 0.75, ...transition } },
+  enter: { opacity: 1, transition: { delay: 0.5, ...transition } },
 }
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
         </Container>
 
         <Container>
-          <h1 className={styles.PrimaryHeading}>I believe the simplicity will stand out, while complexity will get lost in the crowd.</h1>
+          <h1 className={styles.PrimaryHeading}>I believe simplicity will stand out, while complexity will get lost in the crowd.</h1>
         </Container>
 
         <Container>
