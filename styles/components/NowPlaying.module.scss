@@ -1,0 +1,150 @@
+@import '../breakpoints';
+
+.NowPlaying {
+  .Spotify {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 0.25rem;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(#FFFFFF, #FFFFFF), linear-gradient(to right, #EAEAEA, #EAEAEA);
+    padding: 1px;
+
+    @media screen and (max-width: $breakpointMedium) {
+      width: 100%;
+      max-width: 414px;
+    }
+
+    .Active {
+      height: 100%;
+      padding: 0.5rem;
+      position: relative;
+      .GridContainer {
+        display: grid;
+        grid-template-columns: minmax(1px, 75px) minmax(1px, 1fr) 1rem;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        .Image {
+          grid-area: span 1;
+          margin: auto 0;
+          float: none;
+          a {
+            display: block;
+            line-height: 0.75;
+            img {
+              object-fit: cover;
+              object-position: center;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .Body {
+          .Content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            word-break: break-all;
+            overflow: auto;
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+            span {
+              color: #000000;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+            p {
+              color: #7D828C;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .Logo {
+          height: 100%;
+          grid-area: span 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          svg {
+            height: 1rem;
+          }
+        }
+      }
+    }
+
+  //   .NotActive {
+  //     height: 100%;
+  //     padding: 0.5rem;
+  //     position: relative;
+  //     .GridContainer {
+  //       display: grid;
+  //       grid-template-columns: 75px 1fr 1rem;
+  //       grid-template-rows: minmax(75px, 1fr);
+  //       gap: 1rem;
+  //       .Image {
+  //         grid-area: span 1;
+  //         height: 100%;
+  //         width: 100%;
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         svg {
+  //           width: 60%;
+  //           height: 60%;
+  //           path {
+  //             fill: #7D828C;
+  //           }
+  //         }
+  //       }
+
+  //       .Body {
+  //         .Content {
+  //           height: 100%;
+  //           display: flex;
+  //           flex-direction: column;
+  //           justify-content: center;
+  //           align-items: flex-start;
+  //           a {
+  //             color: inherit;
+  //             text-decoration: none;
+  //           }
+  //           p {
+  //             // color: #8a8f98;
+  //             color: #7D828C;
+  //           }
+  //         }
+  //       }
+
+  //       .Logo {
+  //         height: 100%;
+  //         grid-area: span 1;
+  //         display: flex;
+  //         justify-content: flex-end;
+  //         align-items: flex-end;
+  //         svg {
+  //           height: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  }
+  .Spotify:hover,
+  .Spotify:focus {
+    outline: none;
+    // background-image: linear-gradient(#111111, #111111),
+    //   linear-gradient(to right, #845ef7, #845ef7);
+    background-image: linear-gradient(#FFFFFF, #FFFFFF),
+      linear-gradient(to right, #1ed760, #1DB954);
+  }
+}
