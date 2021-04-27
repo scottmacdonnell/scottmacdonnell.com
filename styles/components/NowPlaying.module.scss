@@ -83,61 +83,61 @@
       }
     }
 
-  //   .NotActive {
-  //     height: 100%;
-  //     padding: 0.5rem;
-  //     position: relative;
-  //     .GridContainer {
-  //       display: grid;
-  //       grid-template-columns: 75px 1fr 1rem;
-  //       grid-template-rows: minmax(75px, 1fr);
-  //       gap: 1rem;
-  //       .Image {
-  //         grid-area: span 1;
-  //         height: 100%;
-  //         width: 100%;
-  //         display: flex;
-  //         justify-content: center;
-  //         align-items: center;
-  //         svg {
-  //           width: 60%;
-  //           height: 60%;
-  //           path {
-  //             fill: #7D828C;
-  //           }
-  //         }
-  //       }
+    .NotActive {
+      height: 100%;
+      padding: 0.5rem;
+      position: relative;
+      .GridContainer {
+        display: grid;
+        grid-template-columns: 75px 1fr 1rem;
+        grid-template-rows: minmax(75px, 1fr);
+        gap: 1rem;
+        .Image {
+          grid-area: span 1;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          svg {
+            width: 60%;
+            height: 60%;
+            path {
+              fill: #7D828C;
+            }
+          }
+        }
 
-  //       .Body {
-  //         .Content {
-  //           height: 100%;
-  //           display: flex;
-  //           flex-direction: column;
-  //           justify-content: center;
-  //           align-items: flex-start;
-  //           a {
-  //             color: inherit;
-  //             text-decoration: none;
-  //           }
-  //           p {
-  //             // color: #8a8f98;
-  //             color: #7D828C;
-  //           }
-  //         }
-  //       }
+        .Body {
+          .Content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
+            p {
+              // color: #8a8f98;
+              color: #7D828C;
+            }
+          }
+        }
 
-  //       .Logo {
-  //         height: 100%;
-  //         grid-area: span 1;
-  //         display: flex;
-  //         justify-content: flex-end;
-  //         align-items: flex-end;
-  //         svg {
-  //           height: 1rem;
-  //         }
-  //       }
-  //     }
-  //   }
+        .Logo {
+          height: 100%;
+          grid-area: span 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          svg {
+            height: 1rem;
+          }
+        }
+      }
+    }
   }
   .Spotify:hover,
   .Spotify:focus {
