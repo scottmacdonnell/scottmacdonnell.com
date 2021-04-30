@@ -43,8 +43,13 @@ export default function NowPlaying() {
                   >
                     <span>{data.title}</span>
                   </a>
-                  <p>{data.artist}</p>
-                  {/* <p>{data.album}</p> */}
+                  <a
+                    href={data.songUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>{data.artist}</p>
+                  </a>
                 </div>
               </div>
 
