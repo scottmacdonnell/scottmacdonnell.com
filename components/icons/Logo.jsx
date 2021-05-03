@@ -14,7 +14,6 @@ const animation = {
 }
 
 const styles = {
-  width: "56%",
   overflow: "visible",
   stroke: "#000",
   strokeWidth: "0.15",
@@ -30,6 +29,8 @@ export default function Logo({ animated = false }) {
           <motion.svg 
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            width="64"
+            height="64"
             style={styles}
           >
             <motion.path
