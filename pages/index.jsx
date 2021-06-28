@@ -1,8 +1,4 @@
-import Page from '../components/Page'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Projects from '../components/Projects'
-import Footer from '../components/Footer'
+import Page, { Animation } from '../components/Page'
 
 export default function Index() {
   return (
@@ -10,19 +6,15 @@ export default function Index() {
       className="Index"
       slug="/"
     >
-      <header id="header">
-        <Navbar />
-      </header>
-
-      <main id="main">
-        <Hero />
-
-        <Projects />
-      </main>
-
-      <footer id="footer">
-        <Footer />
-      </footer>
+      <Animation>
+        <header></header>
+        
+        <main>
+          <h1>Scott MacDonnell</h1>
+        </main>
+        
+        <footer></footer>
+      </Animation>
     </Page>
   )
 }
