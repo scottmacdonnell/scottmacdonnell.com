@@ -1,5 +1,6 @@
 import Page, { Animation } from '../components/Page'
 import Logo from '../components/Logo'
+import TopTracks from '../components/TopTracks'
 import Footer from '../components/Footer'
 import * as Text from '../components/ui/Text'
 import Box from '../components/utils/Box'
@@ -35,6 +36,13 @@ export default function Dashboard() {
                 </div>
                 <Text.Heading1 style={{ padding: '1.5rem 0 0 0' }}>Dashboard</Text.Heading1>
             </div>
+          </Box>
+
+          <Box>
+            <Text.Small>Spotify API</Text.Small>
+            <Text.Heading2>Top Tracks</Text.Heading2>
+            <Text.SHeading>My most played tracks this month.</Text.SHeading>
+            <TopTracks />
           </Box>
         </main>
 
