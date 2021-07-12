@@ -29,10 +29,9 @@ function Track({ data }) {
   return (
     <Text.Anchor
       href={data.songUrl}
-      key={data.songUrl}
       isExternal
     >
-      <div className={styles.Track} key={data.songUrl}>
+      <div className={styles.Track}>
         <TrackInfo>
           <TrackImage data={data} />
 

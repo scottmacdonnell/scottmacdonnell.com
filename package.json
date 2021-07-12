@@ -23,9 +23,5 @@
     "react-responsive": "^8.2.0",
     "sass": "^1.35.2",
     "swr": "^0.5.6"
-  },
-  "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
   }
 }
