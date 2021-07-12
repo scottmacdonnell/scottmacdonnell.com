@@ -1,5 +1,6 @@
 import Page, { Animation } from '../components/Page'
 import Social, { TwitterLink, GitHubLink, InstagramLink, LinkedInLink } from '../components/Social'
+import Footer from '../components/Footer'
 import * as Text from '../components/ui/Text'
 import Box from '../components/utils/Box'
 
@@ -30,6 +31,7 @@ export default function Index() {
         </main>
 
         <footer>
+          <Footer />
         </footer>
       </Animation>
     </Page>
