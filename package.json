@@ -1,11 +1,6 @@
 {
-  "name": "scottmacdonnell.com",
-  "productName": "Scott MacDonnell",
-  "version": "2.0.0",
-  "description": "My personal website.",
-  "repository": "https://github.com/scottmacdonnell/scottmacdonnell.com.git",
-  "author": "Scott MacDonnell <scottsmacdonnell@gmail.com>",
-  "license": "MIT",
+  "name": "scott",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "date-fns": "^2.22.1",
     "framer-motion": "^4.1.17",
-    "next": "^11.0.1",
+    "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-responsive": "^8.2.0",
-    "sass": "^1.35.1",
+    "sass": "^1.35.2",
     "swr": "^0.5.6"
   },
   "devDependencies": {
-    "eslint": "^7.29.0",
-    "eslint-config-next": "^11.0.1"
+    "eslint": "7.30.0",
+    "eslint-config-next": "11.0.1"
   }
 }
