@@ -1,7 +1,22 @@
-export default function Home() {
+import Page, { Animation } from '../components/Page'
+
+export default function Index() {
   return (
-    <div>
-      Scott MacDonnell
-    </div>
+    <Page
+      slug="/"
+      className="IndexPage"
+    >
+      <Animation>
+        <header>
+        </header>
+
+        <main>
+          Scott MacDonnell
+        </main>
+
+        <footer>
+        </footer>
+      </Animation>
+    </Page>
   )
 }
