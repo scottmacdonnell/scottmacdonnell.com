@@ -1,0 +1,76 @@
+.Social {
+  display: flex;
+  justify-content: space-between;
+  color: #888888;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #888888;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: #666666;
+  }
+}
+
+.Twitter {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #08A0E9;
+  }
+}
+
+.GitHub {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #ecf2f8;
+  }
+
+  // @media (prefers-color-scheme: dark) {
+  //   a:active,
+  //   a:hover {
+  //     color: #ffffff;
+  //   }
+  // }
+
+  // @media (prefers-color-scheme: light) {
+  //   a:active,
+  //   a:hover {
+  //     color: #24292d;
+  //   }
+  // }
+}
+
+.Instagram {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #DD2A7B;
+  }
+}
+
+.LinkedIn {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #1877f2;
+  }
+}
