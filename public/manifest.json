@@ -5,7 +5,7 @@
   "description": "Build a PWA with Next.js to achieve 100 lighthouse score",
   "scope": "/",
   "start_url": "/",
-  "theme_color": "#F0DA7E",
+  "theme_color": "#845ef7",
   "background_color": "#333333",
   "display": "standalone",
   "icons": [
