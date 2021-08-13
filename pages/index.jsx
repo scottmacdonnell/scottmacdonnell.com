@@ -1,5 +1,6 @@
 import * as Page from '../components/Page'
 import * as Footer from '../components/Footer'
+import * as Logo from '../components/Logo'
 import * as Social from '../components/Social'
 
 export default function Index() {
@@ -8,7 +9,7 @@ export default function Index() {
       title="Index"
     >
       <header></header>
-      
+
       <main>
         <h1>Scott MacDonnell</h1>
       </main>
@@ -19,7 +20,7 @@ export default function Index() {
             <Footer.Tagline>
               <Footer.Organization>
                 <Footer.OrganizationLogo>
-                  <Logo
+                  <Logo.Default
                     color="102, 102, 102"
                     id="footer"
                   />
