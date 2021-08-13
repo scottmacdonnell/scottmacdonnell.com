@@ -1,0 +1,60 @@
+.Social {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.Twitter {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #08A0E9;
+  }
+}
+
+.GitHub {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    @media (prefers-color-scheme: dark) {
+      color: #ecf2f8;
+    }
+  
+    @media (prefers-color-scheme: light) {
+      color: #24292D;
+    }
+  }
+}
+
+.Instagram {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #DD2A7B;
+  }
+}
+
+.LinkedIn {
+  a {
+    color: currentColor;
+  }
+
+  a:active,
+  a:hover {
+    color: #1877f2;
+  }
+}
