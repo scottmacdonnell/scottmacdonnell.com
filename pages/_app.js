@@ -1,7 +1,5 @@
-import '../styles/globals.scss'
+import '../styles/globals.css'
 
-function scottmacdonnell({ Component, pageProps }) {
+export default function ScottMacDonnell({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default scottmacdonnell
