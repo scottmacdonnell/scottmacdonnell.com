@@ -5,7 +5,7 @@ import { MEASUREMENT_ID } from '../lib/gtag'
 export default class MainDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           {/* Favicon */}
           {/* <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
