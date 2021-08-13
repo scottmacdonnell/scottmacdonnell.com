@@ -1,11 +1,18 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+import { getLangFromReq } from '../utils/fromReq'
 import { MEASUREMENT_ID } from '../lib/gtag'
 
 export default class MainDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    const lang = getLangFromReq(ctx.req)
+    return { ...initialProps, lang }
+  }
+
   render() {
     return (
-      <Html lang="en">
+      <Html lang={this.props.lang}>
         <Head>
           {/* Favicon */}
           {/* <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
