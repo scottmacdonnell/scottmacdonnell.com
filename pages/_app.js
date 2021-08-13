@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import * as gtag from '../lib/gtag'
@@ -7,7 +8,7 @@ import '../styles/globals.css'
 
 export default function ScottMacDonnell({ Component, pageProps }) {
   const router = useRouter()
-  
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
@@ -20,5 +21,13 @@ export default function ScottMacDonnell({ Component, pageProps }) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+      </Head>
+
+      <Component {...pageProps} />
+    </>
+  )
 }
