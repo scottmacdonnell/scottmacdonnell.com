@@ -2,6 +2,8 @@ import * as Page from '../components/Page'
 import * as Footer from '../components/Footer'
 import * as Logo from '../components/Logo'
 import * as Social from '../components/Social'
+import * as Text from '../components/ui/Text'
+import Container from '../components/utils/Container'
 
 export default function Index() {
   return (
@@ -11,7 +13,9 @@ export default function Index() {
       <header></header>
 
       <main>
-        <h1>Scott MacDonnell</h1>
+        <Container>
+          <Text.Heading1>Scott MacDonnell</Text.Heading1>
+        </Container>
       </main>
 
       <footer>
