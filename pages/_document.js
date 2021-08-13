@@ -15,15 +15,19 @@ export default class MainDocument extends Document {
       <Html lang={this.props.lang}>
         <Head>
           {/* Favicon */}
-          {/* <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-          <link rel="manifest" href="/favicon/manifest.json" />
           <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#845ef7" />
           <link rel="shortcut icon" href="/favicon/favicon.ico" />
           <meta name="msapplication-TileColor" content="#845ef7" />
           <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-          <meta name="theme-color" content="#845ef7" /> */}
+          <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+          <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+          <meta name="theme-color" content="#845ef7" />
+
+          {/* Web Manifest */}
+          <link rel="manifest" href="/manifest.json" />
 
           {/* Global Meta Tags (Page.js) - OpenGraph */}
           <meta name="og:type" property="og:type" content="website" key="og:type" />
