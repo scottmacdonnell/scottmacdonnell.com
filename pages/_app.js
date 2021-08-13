@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 import * as gtag from '../lib/gtag'
 
-import '../styles/globals.css'
+import '../styles/globals.scss'
 
 export default function ScottMacDonnell({ Component, pageProps }) {
   const router = useRouter()
