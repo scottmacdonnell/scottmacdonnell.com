@@ -88,9 +88,9 @@ export default function Index() {
                 </Text.Heading3>
               </h1>
 
-              {/* <Text.Paragraph style={{ margin: '0.25rem 0', color: '#666' }}>
+              <Text.Paragraph style={{ margin: '0.25rem 0', color: '#666', fontSize: '16px' }}>
                 Full Stack Developer and Sound Engineer based in Toronto, Canada.
-              </Text.Paragraph> */}
+              </Text.Paragraph>
               <div style={{ margin: '0.5rem 0', width: '120px' }}>
                 <Social.Wrapper>
                   <Social.Twitter username="macdonnellscott" />
