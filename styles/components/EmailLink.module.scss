@@ -1,0 +1,7 @@
+.EmailLink { color: #666; }
+
+.EmailLink:active,
+.EmailLink:hover {
+  color: #0070F3;
+  @media (prefers-color-scheme: dark) { color: #3291FF; }
+}
