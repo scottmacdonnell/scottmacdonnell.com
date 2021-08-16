@@ -8,9 +8,9 @@ export const Wrapper = (props) => {
 
   const meta = {
     title: props.title ? `${props.title} - ${name}` : name,
-    url: props.slug ? `${url}/${props.slug}` : url,
+    url: props.slug ? `${url}${props.slug}` : url,
     description: props.description ? props.description : description,
-    img: props.img ? props.img : img
+    img: props.img ? `${url}${props.img}` : img
   }
 
   return (

@@ -17,7 +17,10 @@ export default function Index() {
 
   return (
     <Page.Wrapper
-      title="Index"
+      slug="/"
+      description="Full Stack Developer and Sound Engineer based in Toronto, Canada."
+      img="/og.png"
+      className="Index"
     >
       <header>
         <Navbar.Wrapper>
