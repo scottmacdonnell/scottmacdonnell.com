@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import { useDarkMode } from '../hooks/useDarkMode'
+
 import * as Page from '../components/Page'
 import * as Navbar from '../components/Navbar'
 import * as Footer from '../components/Footer'
@@ -7,6 +10,8 @@ import * as Text from '../components/ui/Text'
 import Container from '../components/utils/Container'
 
 export default function Index() {
+  const darkMode = useDarkMode().getTheme()
+
   return (
     <Page.Wrapper
       title="Index"
@@ -14,10 +19,7 @@ export default function Index() {
       <header>
         <Navbar.Wrapper>
           <Navbar.Logo>
-            <Logo.Default
-              color="0, 0, 0"
-              id="navbar"
-            />
+            <Logo.Animated color={darkMode ? "255, 255, 255" : "0, 0, 0"} id="navbar" /> 
           </Navbar.Logo>
 
           <Navbar.NavView>
@@ -51,7 +53,7 @@ export default function Index() {
       </header>
 
       <main>
-        <section id="intro">
+        <section id="intro" style={{ padding: '1.5rem 0'}}>
           <Container>
             <Text.Small>Scott MacDonnell</Text.Small>
 
