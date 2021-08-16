@@ -1,0 +1,268 @@
+.Wrapper {
+  .Line {
+    width: 100%;
+    height: 1px;
+    padding-top: 1px;
+    margin-top: 2px;
+    background-image: linear-gradient(#EAEAEA, #EAEAEA),
+      linear-gradient(to right, #EAEAEA, #EAEAEA);
+    
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(#333333, #333333),
+        linear-gradient(to right, #333333, #333333);
+    }
+  }
+}
+
+.Wrapper:hover,
+.Wrapper:focus {
+  .Line {
+    background-image: linear-gradient(#1ed760, #1DB954),
+      linear-gradient(to right, #1ed760, #1DB954);
+  }
+}
+
+.Track {
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  -webkit-user-drag: element;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  user-select: none;
+  grid-gap: 16px;
+  display: grid;
+  border: 1px solid transparent;
+  border-radius: 2.5px;
+  height: 56px;
+  position: relative;
+  grid-template-columns: [first] 4fr [var1] 2fr [last] minmax(120px,1fr);
+}
+
+.TrackInfo {
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  justify-self: start;
+}
+
+.TrackImage {
+  line-height: 1.6;
+  font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,helvetica,arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  -webkit-user-drag: none;
+  width: 40px;
+  aspect-ratio: auto 40 / 40;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  vertical-align: baseline;
+  object-fit: cover;
+  object-position: center center;
+  user-select: none;
+  flex-shrink: 0;
+  margin-right: 16px;
+  @media (prefers-color-scheme: dark) {
+    color: rgb(179, 179, 179);
+    background-color: rgb(40, 40, 40);
+  }
+  @media (prefers-color-scheme: light) {
+    color: rgb(76, 76, 76);
+    background-color: rgb(215, 215, 215);
+  }
+
+  img { border-radius: 2.5px; }
+}
+
+.TrackMain {
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-box-align: center;
+  align-items: center;
+  column-gap: 8px;
+  display: grid;
+  grid-template: "title title" "badges subtitle"/auto 1fr;
+  padding-right: 8px;
+}
+
+.TrackTitle {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  unicode-bidi: isolate;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  white-space: unset;
+  word-break: break-all;
+  grid-area: title;
+  justify-self: start;
+}
+
+.TrackArtist {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  white-space: unset;
+  word-break: break-all;
+  grid-area: subtitle;
+  grid-column-start: badges;
+  @media (prefers-color-scheme: dark) { color: rgb(179, 179, 179); }
+  @media (prefers-color-scheme: light) { color: rgb(76, 76, 76); }
+}
+
+.TrackAlbum {
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  justify-self: start;
+  span {
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-direction: normal;
+    direction: inherit;
+    visibility: visible;
+    -webkit-user-drag: element;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    touch-action: manipulation;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-transform: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    white-space: unset;
+    word-break: break-all;
+    user-select: none;
+    @media (prefers-color-scheme: dark) { color: rgb(179, 179, 179); }
+    @media (prefers-color-scheme: light) { color: rgb(76, 76, 76); }
+  }
+}
+
+.TrackMeta {
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  grid-column: last;
+  justify-self: end;
+  @media (prefers-color-scheme: dark) { color: rgb(255, 255, 255); }
+  @media (prefers-color-scheme: light) { color: rgb(0, 0, 0); }
+}
+
+.TrackLength {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  direction: inherit;
+  visibility: visible;
+  user-select: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+  -webkit-box-pack: end;
+  display: flex;
+  font-variant-numeric: tabular-nums;
+  justify-content: flex-end;
+  width: 4ch;
+  @media (prefers-color-scheme: dark) { color: rgb(179, 179, 179); }
+  @media (prefers-color-scheme: light) { color: rgb(76, 76, 76); }
+}
