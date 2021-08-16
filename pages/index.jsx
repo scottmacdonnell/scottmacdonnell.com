@@ -1,4 +1,5 @@
 import * as Page from '../components/Page'
+import * as Navbar from '../components/Navbar'
 import * as Footer from '../components/Footer'
 import * as Logo from '../components/Logo'
 import * as Social from '../components/Social'
@@ -10,12 +11,72 @@ export default function Index() {
     <Page.Wrapper
       title="Index"
     >
-      <header></header>
+      <header>
+        <Navbar.Wrapper>
+          <Navbar.Logo>
+            <Logo.Default
+              color="0, 0, 0"
+              id="navbar"
+            />
+          </Navbar.Logo>
+
+          <Navbar.NavView>
+            <Text.Anchor
+              href="/"
+            >
+              Home
+            </Text.Anchor>
+            <Text.Anchor
+              href="/about"
+            >
+              About
+            </Text.Anchor>
+            <Text.Anchor
+              href="/software"
+            >
+              Software
+            </Text.Anchor>
+            <Text.Anchor
+              href="/dashboard"
+            >
+              Dashboard
+            </Text.Anchor>
+            <Text.Anchor
+              href="/sound"
+            >
+              Sound
+            </Text.Anchor>
+          </Navbar.NavView>
+        </Navbar.Wrapper>
+      </header>
 
       <main>
-        <Container>
-          <Text.Heading1>Scott MacDonnell</Text.Heading1>
-        </Container>
+        <section id="intro">
+          <Container>
+            <Text.Small>Scott MacDonnell</Text.Small>
+
+            <h1 style={{ margin: '0.25rem 0' }} >
+              <Text.Heading3>
+                {"I believe simplicity will "}
+                <div
+                  style={{
+                    display: 'inline-block',
+                    background: "-webkit-linear-gradient(-45deg, #845EF7, #7950F7)",
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                  }}
+                >stand out</div>
+                {", "}
+                <br />
+                {"while complexity will get lost in the crowd."}
+              </Text.Heading3>
+            </h1>
+
+            <Text.Paragraph style={{ margin: '0.25rem 0' }}>
+              Full Stack Developer and Sound Engineer based in Toronto, Canada.
+            </Text.Paragraph>
+          </Container>
+        </section>
       </main>
 
       <footer>
