@@ -102,9 +102,10 @@ function NotPlaying({ data }) {
 }
 
 function Playing({ data }) {
+  console.log(data)
   return (
     <Text.Anchor
-      href={data.songUrl}
+      href={data.url}
       isExternal
     >
       <div className={styles.Track}>
