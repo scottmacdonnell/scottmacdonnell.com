@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useDarkMode } from '../hooks/useDarkMode'
 
 import * as Page from '../components/Page'
