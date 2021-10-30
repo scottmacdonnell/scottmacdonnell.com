@@ -39,7 +39,7 @@
 .Heading3 {
   @include Text;
   @include Heading;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.2;
   @media screen and (max-width: $breakpointMedium) { font-size: 1.75rem; }
 }
