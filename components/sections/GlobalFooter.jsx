@@ -11,9 +11,7 @@ export default function GlobalFooter() {
   return (
     <div className={styles.GlobalFooter}>
       <div className={styles.Content}>
-        <Container>
-          <ContactCTA />
-        </Container>
+        <ContactCTA />
       </div>
 
       <div className={styles.NowPlaying}>
