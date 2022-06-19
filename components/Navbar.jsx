@@ -2,6 +2,8 @@ import Container from 'components/Container'
 import SafeArea from 'components/SafeArea'
 import * as Logo from 'components/Logo'
 
+import { useDarkMode } from 'hooks/useDarkMode'
+
 //? Unfinished menu functionality start
 // import { useModalState } from 'hooks/useModalState'
 //? Unfinished menu functionality end
@@ -9,6 +11,8 @@ import * as Logo from 'components/Logo'
 import styles from 'styles/components/Navbar.module.scss'
 
 export const Block = (props) => {
+  const [ darkMode ] = useDarkMode()
+
   //? Unfinished menu functionality start
   // const { isOpen, onToggle } = useModalState()
 
@@ -19,7 +23,7 @@ export const Block = (props) => {
 
   return (
     <Wrapper>
-      <HeaderLogo color="0, 0, 0" />
+      <HeaderLogo color={darkMode ? "255, 255, 255" : "0, 0, 0"} />
 
       {/* Unfinished menu functionality start */}
       {/* <NavView>
