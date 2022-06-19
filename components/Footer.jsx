@@ -1,8 +1,8 @@
-import * as Text from './ui/Text'
-import Container from './utils/Container'
-import SafeArea from './utils/SafeArea'
+import * as Text from 'components/Text'
+import Container from 'components/Container'
+import SafeArea from 'components/SafeArea'
 
-import styles from '../styles/components/Footer.module.scss'
+import styles from 'styles/components/Footer.module.scss'
 
 export const Wrapper = (props) => {
   return (
@@ -17,6 +17,35 @@ export const Wrapper = (props) => {
 
 export const Directory = (props) => {
   return <div className={styles.Directory} {...props} />
+}
+
+export const Nav = (props) => {
+  return <nav className={styles.Nav} {...props} />
+}
+
+export const NavContent = (props) => {
+  return <ul {...props} />
+}
+
+export const NavItem = ({
+  children,
+  href,
+  isExternal = false
+}) => {
+  return (
+    <li className={styles.NavItem}>
+      <Text.Anchor
+        href={href}
+        isExternal={isExternal}
+      >
+        <span>{children}</span>
+      </Text.Anchor>
+    </li>
+  )
+}
+
+export function NavTitle(props) {
+  return <span className={styles.NavTitle}><strong {...props} /></span>
 }
 
 export const Info = (props) => {

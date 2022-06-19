@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import styles from '../../styles/components/ui/Text.module.scss'
+import styles from 'styles/components/Text.module.scss'
 
 export const Heading1 = (props) => {
   return <h1 className={`${styles.Heading1} ${props.BaronNeue ? styles.BaronNeue : ''}`} {...props} />

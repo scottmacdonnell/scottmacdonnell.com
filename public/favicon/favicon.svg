@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve" width="16" height="16">
+  <style>
+    @media (prefers-color-scheme: light) { :root { filter: none; } .a{ fill: #0F0F0F; } }
+    @media (prefers-color-scheme: dark) { :root { filter: none } .a{ fill: #f0f0f0; } }
+  </style>
+  <path
+    class="a"
+    d="M13,0,24,16.32,13,24ZM11,0,0,16.32,11,24Z"
+  />
+</svg>

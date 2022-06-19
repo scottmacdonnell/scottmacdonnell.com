@@ -1,4 +1,4 @@
-@import '../../breakpoints';
+@import '../breakpoints';
 
 @mixin Text {
   font-feature-settings: "rlig" 1,"calt" 0;
@@ -41,7 +41,7 @@
   @include Heading;
   font-size: 2.5rem;
   line-height: 1.2;
-  @media screen and (max-width: $breakpointMedium) { font-size: 1.5rem; }
+  @media screen and (max-width: $breakpointMedium) { font-size: 1.75rem; }
 }
 
 .Heading4 {

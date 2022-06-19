@@ -1,0 +1,26 @@
+@import '../../breakpoints';
+
+.ContactCTA {
+  padding: 3rem 0;
+}
+
+.Content {
+  .EmailLink {
+    display: inline-block;
+    color: inherit;
+    background-clip: text;
+    background: -webkit-linear-gradient(-45deg, #666666, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition-property: background;
+    transition-duration: .1s;
+    transition-timing-function: ease;
+  }
+
+  .EmailLink:active,
+  .EmailLink:hover {
+    background: -webkit-linear-gradient(-45deg, #845EF7, #7950F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../breakpoints';
+
+.IndexIntro {
+  padding: 8rem 0;
+  // background: #1a1b21;
+  // color: #fff;
+  @media screen and (max-width: $breakpointMedium) {
+    padding: 4rem 0;
+  }
+}
+
+.Content {
+  small {
+    margin: 0.375rem -0.2rem 0.375rem 0;
+  }
+  
+  h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    @media screen and (max-width: $breakpointMedium) {
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    color: #666666;
+  }
+
+  .Highlight {
+    display: inline-block;
+    background: -webkit-linear-gradient(-45deg, #845EF7, #7950F7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .Social {
+    margin: 0.5rem 0;
+    width: calc((24px + 0.375rem) * 4);
+  }
+}

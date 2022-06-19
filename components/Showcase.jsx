@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import * as Text from './ui/Text'
-import styles from '../styles/components/Showcase.module.scss'
+import * as Text from 'components/Text'
+import styles from 'styles/components/Showcase.module.scss'
 
 export const Wrapper = (props) => {
   return (
@@ -66,8 +66,8 @@ export const Secondary = (props) => {
           <Image
             src={props.img}
             alt={props.name}
-            width={960}
-            height={540}
+            width={1440}
+            height={810}
             objectFit="cover"
             objectPosition="center"
           />

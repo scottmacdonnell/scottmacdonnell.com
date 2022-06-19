@@ -1,4 +1,4 @@
-import styles from '../../styles/components/utils/SafeArea.module.scss'
+import styles from 'styles/components/SafeArea.module.scss'
 
 export default function SafeArea({
   top = false,

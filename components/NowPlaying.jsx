@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import useSWR from 'swr'
 
-import Spinner from './utils/Spinner'
-import * as Text from './ui/Text'
+import Spinner from 'components/Spinner'
+import * as Text from 'components/Text'
 
-import fetcher from '../lib/fetcher'
+import fetcher from 'lib/fetcher'
 
-import styles from '../styles/components/NowPlaying.module.scss'
+import styles from 'styles/components/NowPlaying.module.scss'
 
 export const Content = () => {
   const { data, error } = useSWR('/api/spotify/now-playing', fetcher)

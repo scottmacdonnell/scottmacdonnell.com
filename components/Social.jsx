@@ -1,7 +1,7 @@
-import * as Icon from './ui/Icon'
-import { Anchor } from './ui/Text'
+import * as Icon from 'components/Icon'
+import { Anchor } from 'components/Text'
 
-import styles from '../styles/components/Social.module.scss'
+import styles from 'styles/components/Social.module.scss'
 
 export const Wrapper = (props) => {
   return (

@@ -1,4 +1,4 @@
-import styles from '../../styles/components/utils/Spinner.module.scss'
+import styles from 'styles/components/Spinner.module.scss'
 
 export default function Spinner(props) {
   const style = {
