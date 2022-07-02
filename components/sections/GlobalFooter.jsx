@@ -38,7 +38,7 @@ export default function GlobalFooter() {
             </Footer.Organization>
 
             <Footer.Copyright>
-              © 2021 Mamma Rita&apos;s Cucina. All Rights Reserved.
+              © 2022 Scott MacDonnell. All Rights Reserved.
             </Footer.Copyright>
           </Footer.Tagline>
 
