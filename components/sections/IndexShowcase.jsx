@@ -13,7 +13,7 @@ export default function IndexShowcase() {
               <Showcase.FeaturedWrapper>
                 <Showcase.Featured
                   name="Mamma Rita's Cucina"
-                  href="https://mammaritas.ca"
+                  href="https://mammaritascucina.scottmacdonnell.com"
                   img="/images/showcase/mammaritas.png"
                 />
               </Showcase.FeaturedWrapper>
@@ -21,12 +21,12 @@ export default function IndexShowcase() {
               <Showcase.SecondaryWrapper>
                 <Showcase.Secondary
                   name="deepsix"
-                  href="https://deepsixband.com"
+                  href="https://deepsixband.scottmacdonnell.com"
                   img="/images/showcase/deepsixband.png"
                 />
                 <Showcase.Secondary
                   name="Larry Fitzgerald Jr."
-                  href="https://larryfitzgerald.com"
+                  href="https://larryfitzgerald.scottmacdonnell.com"
                   img="/images/showcase/larryfitzgerald.png"
                 />
               </Showcase.SecondaryWrapper>
