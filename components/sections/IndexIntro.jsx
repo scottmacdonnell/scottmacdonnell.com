@@ -24,7 +24,7 @@ export default function IndexIntro() {
           </Text.Heading1>
 
           <Text.Paragraph>
-            Full Stack Developer and Sound Engineer based in Toronto, Canada.
+            Full-Stack Web Developer and Sound Engineer based in Toronto, Canada.
           </Text.Paragraph>
 
           <div className={styles.Social}>

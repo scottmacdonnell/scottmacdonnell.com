@@ -12,9 +12,9 @@ export default function IndexShowcase() {
             <Showcase.FeaturedRight>
               <Showcase.FeaturedWrapper>
                 <Showcase.Featured
-                  name="Larry Fitzgerald Jr."
+                  name="Larry Fitzgerald Jr. (2019-2021)"
                   displayLink="larryfitzgerald.com"
-                  href="https://larryfitzgerald.scottmacdonnell.com"
+                  href="https://larryfitzgerald.com"
                   img="/images/showcase/larryfitzgerald.png"
                 />
               </Showcase.FeaturedWrapper>
@@ -27,13 +27,27 @@ export default function IndexShowcase() {
                   img="/images/showcase/mammaritas.png"
                 />
                 <Showcase.Secondary
+                  name="Newman & Sversky LLP."
+                  displayLink="newmansversky.com"
+                  href="https://newmansversky.com"
+                  img="/images/showcase/newmansverskyllp.png"
+                />
+              </Showcase.SecondaryWrapper>
+            </Showcase.FeaturedRight>
+            <Showcase.SecondaryOnly>
+                <Showcase.Secondary
                   name="Spring Lakes Golf Club"
                   displayLink="springlakesgolf.com"
                   href="https://github.com/scottmacdonnell/springlakesgolf.com"
                   img="/images/showcase/springlakesgolf.png"
                 />
-              </Showcase.SecondaryWrapper>
-            </Showcase.FeaturedRight>
+                <Showcase.Secondary
+                  name="deepsix"
+                  displayLink="deepsixband.com"
+                  href="https://deepsixband.scottmacdonnell.com"
+                  img="/images/showcase/deepsixband.png"
+                />
+            </Showcase.SecondaryOnly>
           </Showcase.Wrapper>
         </Container>
       </div>
