@@ -47,7 +47,7 @@ export default function GlobalFooter() {
               <Social.Twitter username="" />
               <Social.GitHub username="scottmacdonnell" />
               <Social.Instagram username="scott.macdonnell" />
-              <Social.LinkedIn username="scottsmacdonnell" />
+              <Social.LinkedIn username="macdonnellscott" />
             </Social.Wrapper>
           </Footer.SocialWrapper>
         </Footer.Info>
