@@ -32,7 +32,7 @@ export default function IndexIntro() {
               <Social.Twitter username="" />
               <Social.GitHub username="scottmacdonnell" />
               <Social.Instagram username="scott.macdonnell" />
-              <Social.LinkedIn username="scottsmacdonnell" />
+              <Social.LinkedIn username="macdonnellscott" />
             </Social.Wrapper>
           </div>
         </div>
