@@ -74,7 +74,7 @@ export const Secondary = (props) => {
         </div>
         <div className={styles.Overlay}>
           <Text.Heading6>{props.name}</Text.Heading6>
-          <Text.Paragraph style={{ color: '#666' }}>{props.href.replace(/(https:\/\/)/gm, '')}</Text.Paragraph>
+          <Text.Paragraph style={{ color: '#666' }}>{props.displayLink.replace(/(https:\/\/)/gm, '')}</Text.Paragraph>
         </div>
       </div>
     </Text.Anchor>
