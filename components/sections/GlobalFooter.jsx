@@ -38,7 +38,7 @@ export default function GlobalFooter() {
             </Footer.Organization>
 
             <Footer.Copyright>
-              © 2022 Scott MacDonnell. All Rights Reserved.
+              © 2025 Scott MacDonnell. All Rights Reserved.
             </Footer.Copyright>
           </Footer.Tagline>
 
