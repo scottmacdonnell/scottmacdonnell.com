@@ -12,25 +12,25 @@ export default function IndexShowcase() {
             <Showcase.FeaturedRight>
               <Showcase.FeaturedWrapper>
                 <Showcase.Featured
-                  name="Mamma Rita's Cucina"
-                  displayLink="mammaritas.ca"
-                  href="https://mammaritascucina.scottmacdonnell.com"
-                  img="/images/showcase/mammaritas.png"
+                  name="Larry Fitzgerald Jr."
+                  displayLink="larryfitzgerald.com"
+                  href="https://larryfitzgerald.scottmacdonnell.com"
+                  img="/images/showcase/larryfitzgerald.png"
                 />
               </Showcase.FeaturedWrapper>
 
               <Showcase.SecondaryWrapper>
                 <Showcase.Secondary
-                  name="deepsix"
-                  displayLink="deepsixband.com"
-                  href="https://deepsixband.scottmacdonnell.com"
-                  img="/images/showcase/deepsixband.png"
+                  name="Mamma Rita's Cucina"
+                  displayLink="mammaritas.ca"
+                  href="https://mammaritascucina.scottmacdonnell.com"
+                  img="/images/showcase/mammaritas.png"
                 />
                 <Showcase.Secondary
-                  name="Larry Fitzgerald Jr."
-                  displayLink="larryfitzgerald.com"
-                  href="https://larryfitzgerald.scottmacdonnell.com"
-                  img="/images/showcase/larryfitzgerald.png"
+                  name="Spring Lakes Golf Club"
+                  displayLink="springlakesgolf.com"
+                  href="https://github.com/scottmacdonnell/springlakesgolf.com"
+                  img="/images/showcase/springlakesgolf.png"
                 />
               </Showcase.SecondaryWrapper>
             </Showcase.FeaturedRight>
