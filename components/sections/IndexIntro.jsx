@@ -29,9 +29,7 @@ export default function IndexIntro() {
 
           <div className={styles.Social}>
             <Social.Wrapper>
-              <Social.Twitter username="" />
               <Social.GitHub username="scottmacdonnell" />
-              <Social.Instagram username="scott.macdonnell" />
               <Social.LinkedIn username="macdonnellscott" />
             </Social.Wrapper>
           </div>
