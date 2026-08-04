@@ -34,7 +34,7 @@ export default function IndexShowcase() {
                 />
               </Showcase.SecondaryWrapper>
             </Showcase.FeaturedRight>
-            <Showcase.SecondaryOnly>
+            {/* <Showcase.SecondaryOnly>
                 <Showcase.Secondary
                   name="Spring Lakes Golf Club"
                   displayLink="springlakesgolf.com"
@@ -47,7 +47,7 @@ export default function IndexShowcase() {
                   href="https://deepsixband.scottmacdonnell.com"
                   img="/images/showcase/deepsixband.png"
                 />
-            </Showcase.SecondaryOnly>
+            </Showcase.SecondaryOnly> */}
           </Showcase.Wrapper>
         </Container>
       </div>
